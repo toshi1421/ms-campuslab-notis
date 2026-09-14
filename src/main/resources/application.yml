@@ -1,1 +1,14 @@
-spring.application.name=ms-campuslab-notis
+server:
+  port: 8084
+
+spring:
+  application:
+    name: ms-campuslab-notify
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      simple:
+        acknowledge-mode: manual
