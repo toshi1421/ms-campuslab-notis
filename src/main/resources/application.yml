@@ -3,7 +3,8 @@ server:
 
 spring:
   application:
-    name: ms-campuslab-notify
+    name: ms-campuslab-notis
+    
   rabbitmq:
     host: localhost
     port: 5672
@@ -12,3 +13,17 @@ spring:
     listener:
       simple:
         acknowledge-mode: manual
+        auto-startup: true
+    dynamic: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: darlyneezamorano@gmail.com
+    password: "pjxc nmzv wfpe wxcs"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

@@ -33,5 +33,5 @@ public class NotificationEvent {
     public void setPara(String para) { this.para = para; }
 
     public String getMensaje() { return mensaje; }
-    public void setMessage(String mensaje) { this.mensaje = mensaje; }
+    public void setMensaje(String mensaje) { this.mensaje = mensaje; }
 }
