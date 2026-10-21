@@ -7,7 +7,6 @@ FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
-EXPOSE 5000
-ENV PORT=5000
+EXPOSE 8084
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
